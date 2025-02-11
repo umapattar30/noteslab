@@ -1,0 +1,181 @@
+
+student@DBMS2 MINGW64 ~/desktop/prog1
+$ git init
+Initialized empty Git repository in C:/Users/student/Desktop/prog1/.git/
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git remote add origin https://github.com/umapattar30/devops-prog1.git
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git add .
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git config --global user. name"umapattar30"
+error: key does not contain variable name: user.
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git config --global user.name"umapattar30"
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git commit -m "version1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'student@DBMS2.(none)')
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git config --global user.name"umapattar30"
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git config --global user.email"workwithumap@gmail.com"
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git commit -m "version1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'student@DBMS2.(none)')
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git config --global user.name "umapattar30"
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git commit -m "version1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'student@DBMS2.(none)')
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git config --global user.email "workwithumap@gmail.com"
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git commit -m "version1"
+[master (root-commit) a79b981] version1
+ 2 files changed, 2 insertions(+)
+ create mode 100644 file 1.txt
+ create mode 100644 file 2.txt
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+fatal: User cancelled dialog.
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/git-askpass.exe'
+Username for 'https://github.com': umapattar30
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/git-askpass.exe'
+Password for 'https://github.com':
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/umapattar30/devops-prog1.git/'
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 269 bytes | 33.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/umapattar30/devops-prog1/pull/new/master
+remote:
+To https://github.com/umapattar30/devops-prog1.git
+ * [new branch]      master -> master
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file 1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git add .
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git commit -m "version1"
+[master 010634b] version1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ git log
+commit 010634b7694c134df769091beb2959531773495f (HEAD -> master)
+Author: umapattar30 <workwithumap@gmail.com>
+Date:   Tue Feb 11 15:08:01 2025 +0530
+
+    version1
+
+commit a79b981f06f106f2200f555ea5a567ca10101aaa (origin/master)
+Author: umapattar30 <workwithumap@gmail.com>
+Date:   Tue Feb 11 14:42:11 2025 +0530
+
+    version1
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ ls
+'file 1.txt'  'file 2.txt'
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ cat file 1.txt
+cat: file: No such file or directory
+cat: 1.txt: No such file or directory
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ cat file1.txt
+cat: file1.txt: No such file or directory
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ cat file 1.txt
+cat: file: No such file or directory
+cat: 1.txt: No such file or directory
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ cat file 2.txt
+cat: file: No such file or directory
+cat: 2.txt: No such file or directory
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$ cat 'file 1.txt'
+kya haal hai???
+aya swad eng ka?
+
+student@DBMS2 MINGW64 ~/desktop/prog1 (master)
+$
